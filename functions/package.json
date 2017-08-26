@@ -1,0 +1,19 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "dependencies": {
+    "firebase-admin": "~4.2.1",
+    "firebase-functions": "^0.5.9",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "private": true,
+  "devDependencies": {
+    "prettier": "^1.5.3",
+    "standard": "^10.0.3"
+  },
+  "scripts": {
+    "standard": "standard --fix \"./**/*.js\"",
+    "prettier": "prettier --write --single-quote --no-semi \"./**/*.js\""
+  }
+}
