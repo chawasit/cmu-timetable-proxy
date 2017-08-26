@@ -60,6 +60,7 @@ exports.enrollment = functions.https.onRequest((request, response) => {
 
   if (!isValidRequest) {
     response.send(Error('bad request'))
+    return
   }
 
   console.log(
@@ -94,6 +95,7 @@ exports.course = functions.https.onRequest((request, response) => {
 
   if (!isValidRequest) {
     response.send(Error('bad request'))
+    return
   }
 
   console.log(
