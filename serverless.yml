@@ -1,0 +1,16 @@
+service: cmu-time-table-proxy
+
+provider:
+  name: google
+  runtime: nodejs
+  project: cmu-time-table-proxy-ttp
+  credentials: keyfile.json
+
+plugins:
+  - serverless-google-cloudfunctions
+
+functions:
+  enrollment:
+    handler: enrollment
+    events:
+      - http: path
