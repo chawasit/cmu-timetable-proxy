@@ -26,10 +26,10 @@ const isValidCourseID = courseID =>
   isDefined(courseID) && courseIDPattern.test(courseID)
 
 const hasStudentID = (htmlString, studentID) =>
-  new RegExp('.*' + studentID + '.*').test(htmlString)
+  new RegExp(`.*${studentID}.*`).test(htmlString)
 
 const hasCourseID = (htmlString, courseID) =>
-  new RegExp(courseID).test(htmlString)
+  new RegExp(`.*${courseID}.*`).test(htmlString)
 
 const enrollmentURL = (studentID, semester) =>
   `https://www3.reg.cmu.ac.th/regist${semester}/public/result.php?id=${studentID}`
@@ -93,6 +93,7 @@ exports.course = (request, response) => {
 
   http
     .post(url)
+    .set('Content-Type', 'application/x-www-form-urlencoded')
     .send({
       s_course1: courseID,
       s_lec1: lectureSection,
