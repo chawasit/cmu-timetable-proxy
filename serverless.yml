@@ -3,8 +3,8 @@ service: cmu-timetable-proxy
 provider:
   name: google
   runtime: nodejs
-  project: timetable-proxy
-  credentials: ~/.gcloud/cmu-timetable-key.json
+  project: cmu-timetable-proxy
+  credentials: ~/.gcloud/cmu-timetable-proxy-keyfile.json
 
 plugins:
   - serverless-google-cloudfunctions
