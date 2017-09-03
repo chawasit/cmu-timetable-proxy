@@ -1,0 +1,39 @@
+{
+  "name": "cmu-timetable-proxy",
+  "version": "1.0.0",
+  "description": "Serverless function use for proxy request from zalzer.com/cmutimetable to reg.cmu.ac.th",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "lodash": "^4.17.4",
+    "serverless-google-cloudfunctions": "^1.1.1",
+    "superagent": "^3.6.0"
+  },
+  "devDependencies": {
+    "express": "^4.15.4",
+    "jest": "^20.0.4",
+    "prettier": "^1.6.1",
+    "standard": "^10.0.3",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "jest",
+    "standard": "standard --fix \"./**/*.js\"",
+    "prettier": "prettier --write --single-quote --no-semi \"./**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chawasit/cmu-timetable-proxy.git"
+  },
+  "keywords": [
+    "cmu",
+    "timetable",
+    "reg"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chawasit/cmu-timetable-proxy/issues"
+  },
+  "homepage": "https://github.com/chawasit/cmu-timetable-proxy#readme"
+}
